@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href="{{ url_for('static', filename='style/style.css') }}">
+    <script type='text/javascript' src='//code.jquery.com/jquery-1.4.2.min.js'></script>
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js'></script>
+    <script type='text/javascript' src="{{ url_for('static', filename='js/chat.js') }}"></script>
+  </head>
+  <body>
+    <div class='center'>
+      <div class='chatbox' id='chatbox'>
+      </div>
+      <div class='input'>
+        <form id='textform' onSubmit="return sendMessage()">
+        <input id='msgbox' type='text'><input type='submit' id='submit' value='Send'>
+        </form>
+      </div>
+    </div>
+    <br>
+    <a href='/pickname'>Change Name</a>
+    <br>
+    <a href='/count'>View message count</a>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+Flask
+Flask-SocketIO
+Jinja2
+MarkupSafe
+Werkzeug
+gevent
+gevent-socketio
+gevent-websocket
+greenlet
+itsdangerous
+ujson
